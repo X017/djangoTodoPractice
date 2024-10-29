@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+
+
+
+
+{% block content  %}
+    {% for obj in my_list %}
+    <table>
+        <th> Title: </th>  <td>{{obj.Title}} </td> 
+        <th>  Body: </th>  <td>{{obj.Body}} </td> 
+        <th>  Finished : </th> <td>{{obj.finish}} </td> 
+    
+    </table>
+
+    {% endfor %}
+{% endblock content %}
